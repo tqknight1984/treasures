@@ -3,6 +3,7 @@ var EventEmitter = require('events').EventEmitter;
 var util = require('util');
 var dataApi = require('../util/dataApi');
 var utils = require('../util/utils');
+var logger = require('pomelo-logger').getLogger(__filename);
 
 var id = 1;
 
@@ -14,7 +15,7 @@ var id = 1;
  * @api public
  */
 function Entity(opts) {
-	EventEmitter.call(this);
+ 	EventEmitter.call(this);
 	this.entityId = id++;
 	this.kindId = opts.kindId;
 	this.kindName = opts.kindName;

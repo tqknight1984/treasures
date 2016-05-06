@@ -29,8 +29,8 @@ var Data = function(data) {
 /**
  * map the array data to object
  *
- * @param {Object}
- * @param {Array}
+ * @param {"name":0,"age":1}
+ * @param ["tq",33]
  * @return {Object} result
  * @api private
  */
